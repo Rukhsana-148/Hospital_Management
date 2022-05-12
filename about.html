@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Hospital Management</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="style/all.min.css">
+
+<link rel="stylesheet" href="style/fontawesome.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;0,700;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="abc.css">
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<link rel="stylesheet" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css">
+<script src="app.js"></script>
+
+<body>
+    <div class="container-body">
+        <div class="top-body">
+            <nav>
+                <div class="row">
+                    <div class="col-sm-6"></div>
+                    <div class="col-sm-6">
+
+                        <ul>
+                            <li><a href="#" class="his">History</a></li>
+                            <li><a href="#" class="loc">Location</a></li>
+                            <li><a href="#" class="env">Environment</a></li>
+                            <li><a href="#" class="ser">Service</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="home">
+            <h1>NOVA HOSPITAL</h1>
+        </div>
+
+
+    </div>
+    <div class="history">
+        <h4>History of the Hospital</h4>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum, iste quos, in saepe vitae sint aperiam aspernatur repellendus modi necessitatibus blanditiis ipsa enim corrupti beatae minus error perspiciatis et dolores. Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Nemo cumque velit saepe vitae excepturi maiores consequatur, adipisci perspiciatis sint voluptatem non culpa in at rem exercitationem possimus ea aut necessitatibus.</p>
+    </div>
+    <div class="location">
+        <h4>Location</h4>
+        <div class="row">
+            <div class="col-sm-5"></div>
+            <div class="cols-sm-2">
+                <a href="https://goo.gl/maps/xEZDXmV4Ha6fq4XS8">Click now, to show the google map</a>
+                <p>Call : 013XX-XXXXXX, 014XX-XXXXXX
+                </p>
+            </div>
+            <div class="col-sm-5"></div>
+        </div>
+    </div>
+    <div class="environment">
+        <h4>Our Hospital's Environment</h4>
+        <p>Environment of any hospital may be neat & clean. Our hospital's environment also very neat and clean.The study took place in a great hospital of 1034 beds in the urban area. Within the hospital, all specialized sections were taken into account,
+            excepting those of ITA and psychiatry where no information can be obtained from the patients. The lot of investigated patients was of 156, this fact being established through sampling according to the total number of beds in the hospital (1034
+            beds). The selection of the subjects was achieved according to the following variables: number of hospitalization days (minimum 3 days) and the sex of the patients. Social-demographical characteristics: age, origin environment, education level
+            resided implicitly from the selection undertaken and from the completion of the questionnaires </p>
+        <div class="row">
+            <div class="col-sm-3"><img src="one.jpg" /></div>
+            <div class="col-sm-3"><img src="two.jpg" /></div>
+            <div class="col-sm-3"><img src="three.jpg" /></div>
+            <div class="col-sm-3"><img src="four.jpg" /></div>
+        </div>
+    </div>
+    <div class="service">
+        <div class="row">
+            <div class="col-sm-12">
+                <h4>Service</h4>
+                <p>Our service is very good. In reciption center, the behaviour of the reciptonist are very good. They are very polite. Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, natus dolores. Aut saepe provident culpa, eius ea inventore
+                    maxime ex consequuntur amet. Aut blanditiis officia atque! Fugit ad exercitationem unde?Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique cum facilis quam perspiciatis, magni eos nesciunt doloribus? Ducimus atque at
+                    aspernatur itaque molestiae. Corporis, unde earum tempora repudiandae quam et?</p>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <p>Copyright<i class="fas fa-copyright"></i>2022 observed by <span>Rukhsana Khatun</span></p>
+        <p>Dept. of Computer Science and Engineering</p>
+
+    </div>
+    </div>
+    <script>
+        $('.environment').hide();
+        $('.location').hide();
+        $('.history').hide();
+        $('.service').hide();
+        $(document).ready(function() {
+            $('.his').click(function() {
+                $('.home').hide();
+                $('.environment').hide();
+                $('.location').hide();
+                $('.history').show();
+                $('service').hide();
+            })
+        })
+
+        $(document).ready(function() {
+            $('.loc').click(function() {
+                $('.home').hide();
+                $('.environment').hide();
+                $('.location').show();
+                $('.history').hide();
+                $('.service').hide();
+            })
+        })
+
+        $(document).ready(function() {
+            $('.env').click(function() {
+                $('.home').hide();
+                $('.environment').show();
+                $('.location').hide();
+                $('.history').hide();
+                $('.service').hide();
+            })
+        })
+        $(document).ready(function() {
+            $('.ser').click(function() {
+                $('.home').hide();
+                $('.environment').hide();
+                $('.location').hide();
+                $('.history').hide();
+                $('.service').show();
+            })
+        })
+    </script>
+</body>
+
+</html>

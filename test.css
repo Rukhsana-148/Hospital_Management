@@ -1,0 +1,26 @@
+* {
+    margin: 0px 0px;
+    padding: 0px 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    color: white;
+    max-width: 1368px;
+    background: url('bg.jpg') no-repeat center/cover;
+}
+
+h4 {
+    padding-top: 70px;
+}
+
+h6 {
+    padding-bottom: 70px;
+}
+
+form {
+    padding: 40px 40px;
+    border: 3px solid orangered;
+    border-radius: 2rem;
+}

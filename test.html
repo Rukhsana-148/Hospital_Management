@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Hospital Management</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="style/all.min.css">
+
+<link rel="stylesheet" href="style/fontawesome.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;0,700;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+<link rel="stylesheet" href="test.css">
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<link rel="stylesheet" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css">
+<script src="app.js"></script>
+
+<body>
+    <div class="container">
+        <div class="top">
+            <h4 class="text-center">Medical Test</h4>
+            <h5 class="text-center">Nova Medical Hospital, Jashore</h5>
+            <h6 class="text-center">Call:014567890, 01345678923</h6>
+
+            <div class="row">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4">
+                    <form action="print.php" method="post">
+                        <div class="form-input-group">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" class="form-control">
+                            <label for="age">Age</label>
+                            <input type="number" name="age" class="form-control">
+                            <label for="dis">Disease</label>
+                            <select class="form-control" name="dis">
+                                <option>Anthrax</option>
+                                <option>Botulism</option>
+                                <option>Brucellosis</option>
+                                <option>Chikungunya Virus </option>
+                                <option>Cholera</option>
+                                <option>Coronavirus Diseases</option>
+                                <option>Dengue</option>
+                                <option>Ebola virus diseases</option>
+                                <option>Haemorrhagic fevers, viral</option>
+                                <option>Hepatities</option>
+                                <option>HIV/AIDS</option>
+                                <option>Influenza</option>
+                                <option>Rotavirus</option>
+                                <option>syndrome</option>
+                                <option>Sexually transmitted infections</option>
+                                <option>Tuberculosis</option>
+                                <option>Zika Virus</option>
+                            </select>
+                            <label for="test">Test Name & Price</label>
+                            <select name="test" class="form-control">
+                         <option>A-3400/=</option>
+                         <option>B-3300/=</option>
+                         <option>C-3000/=</option>
+                         <option>V-3400/=</option>
+                         <option>T-2000/=</option>
+                        </select>
+                            <input type="submit" name="submit" value="Submit" class="btn btn-primary text-white">
+                        </div>
+                    </form>
+                </div>
+                <div class="col-sm-4"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
